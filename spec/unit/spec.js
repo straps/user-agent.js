@@ -44,6 +44,23 @@ describe '.parse()'
     end
   end
   
+  describe 'Konqueror'
+    it 'should work'
+      parse(
+        'Mozilla/5.0 (compatible; Konqueror/4.2; Linux; X11; x86_64) KHTML/4.2.4 (like Gecko) Fedora/4.2.4-2.fc11',
+        'konqueror',
+        '4.2',
+        'Linux'
+        )
+      parse(
+        'Mozilla/5.0 (compatible; Konqueror/3.1-rc6; i686 Linux; 20021105)',
+        'konqueror',
+        '3.1-rc6',
+        'Linux'
+        )
+    end
+  end
+  
   describe 'Chrome'
     it 'should work'
       parse(
