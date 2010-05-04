@@ -15,6 +15,35 @@ describe '.parse()'
     }
   end
   
+  describe 'Internet Explorer'
+    it 'should work'
+      parse(
+        'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)',
+        'msie',
+        '8.0',
+        'Windows 7'
+        )
+      parse(
+        'Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)',
+        'msie',
+        '7.0b',
+        'Windows 2003'
+        )
+      parse(
+        'Mozilla/4.0 (compatible; MSIE 6.0b; Windows NT 5.1)',
+        'msie',
+        '6.0b',
+        'Windows XP'
+        )
+      parse(
+        'Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)',
+        'msie',
+        '6.0',
+        'Windows XP'
+        )
+    end
+  end
+  
   describe 'Safari'
     it 'should work'
       parse(
