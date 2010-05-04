@@ -14,6 +14,14 @@
         full: '... same as above ...'
       }
 
+## Testing
+
+    $ make test
+
+or
+
+    $ node spec/node.js
+
 ## License 
 
 (The MIT License) 
