@@ -3,6 +3,17 @@
 
   User agent string parser for [nodejs](http://nodejs.org).
 
+## Usage
+
+    var userAgent = require('user-agent')
+    userAgent.parse('Mozilla/5.0 (Windows; U; Windows NT 5.1; en) AppleWebKit/526.9 (KHTML, like Gecko) Version/4.0dp1 Safari/526.8')
+    // => {
+      name: 'safari',
+      version: '4.0dp1',
+      os: 'Windows XP',
+      full: '... same as above ...'
+    }
+
 ## License 
 
 (The MIT License) 
