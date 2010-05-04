@@ -1,0 +1,5 @@
+---
+  name: user agent
+  description: user agent string parser
+  tags: browser user agent parser
+  version: 0.0.1
