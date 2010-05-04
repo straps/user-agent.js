@@ -15,6 +15,29 @@ describe '.parse()'
     }
   end
   
+  describe 'Firefox'
+    it 'should work'
+      parse(
+        'Mozilla/5.0 (X11; U; Linux i686; pl-PL; rv:1.9.0.2) Gecko/20121223 Ubuntu/9.25 (jaunty) Firefox/3.8',
+        'firefox',
+        '3.8',
+        'Linux'
+        )
+      parse(
+        'Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2b5) Gecko/20091204 Firefox/3.6b5',
+        'firefox',
+        '3.6b5',
+        'Windows 7'
+        )
+      parse(
+        'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.8.1.5) Gecko/20061201 Firefox/2.0.0.5 (Ubuntu-feisty)',
+        'firefox',
+        '2.0.0.5',
+        'Linux'
+        )
+    end  
+  end
+  
   describe 'Internet Explorer'
     it 'should work'
       parse(
