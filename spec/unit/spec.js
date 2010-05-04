@@ -44,6 +44,29 @@ describe '.parse()'
     end
   end
   
+  describe 'Opera'
+    it 'should work'
+      parse(
+        'Opera/9.99 (Windows NT 5.1; U; pl) Presto/9.9.9',
+        'opera',
+        '9.99',
+        'Windows XP'
+        )
+      parse(
+        'Mozilla/5.0 (Linux i686 ; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.70',
+        'opera',
+        '9.70',
+        'Linux'
+        )
+      parse(
+        'Opera/9.64 (X11; Linux i686; U; Linux Mint; it) Presto/2.1.1',
+        'opera',
+        '9.64',
+        'Linux'
+        )
+    end
+  end
+  
   describe 'Safari'
     it 'should work'
       parse(
