@@ -44,6 +44,29 @@ describe '.parse()'
     end
   end
   
+  describe 'Chrome'
+    it 'should work'
+      parse(
+        'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/4.0.202.2 Safari/532.0',
+        'chrome',
+        '4.0.202.2',
+        'Linux'
+        )
+      parse(
+        'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13',
+        'chrome',
+        '0.2.149.27',
+        'Windows 2003'
+        )
+      parse(
+        'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.30 Safari/525.13',
+        'chrome',
+        '0.2.149.30',
+        'Windows Vista'
+        )
+    end
+  end
+  
   describe 'Opera'
     it 'should work'
       parse(
