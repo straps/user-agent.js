@@ -1,5 +1,5 @@
 
-0.0.1 / YYYY-MM-DD
-------------------
+0.0.1 / 2010-05-04
+==================
 
-* Initial release
+  * Initial release
