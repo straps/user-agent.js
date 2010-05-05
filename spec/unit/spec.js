@@ -12,6 +12,7 @@ describe '.parse()'
       agent.should.have_property 'name', name
       agent.should.have_property 'version', version
       agent.should.have_property 'os', os
+      agent.should.have_property 'fullName', name + ' ' + version
     }
   end
   

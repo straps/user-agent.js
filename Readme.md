@@ -10,6 +10,7 @@
     // => {
         name: 'safari',
         version: '4.0dp1',
+        fullName: 'safaro 4.0dp1', 
         os: 'Windows XP',
         full: '... same as above ...'
       }
