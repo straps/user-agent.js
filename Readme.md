@@ -3,6 +3,10 @@
 
   User agent string parser for [nodejs](http://nodejs.org).
 
+## Installation
+
+    $ npm install user-agent
+
 ## Usage
 
     var userAgent = require('user-agent')

@@ -1,5 +1,5 @@
 { "name": "user-agent",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "User-Agent string parser",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "main": "./lib/user-agent.js"
