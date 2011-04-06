@@ -182,4 +182,27 @@ describe '.parse()'
         )
     end
   end
+
+  describe 'Epiphany'
+    it 'should work'
+      parse(
+        'Mozilla/5.0 (X11; U; Linux i686; it-it) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/531.2+ Ubuntu/10.10 () Epiphany/2.30.2',
+        'epiphany',
+        '2.30.2',
+        'Linux'
+        )
+    end
+  end
+
+  describe 'Curl'
+    it 'should work'
+      parse(
+        'curl/7.21.0 (i686-pc-linux-gnu) libcurl/7.21.0 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18',
+        'curl',
+        '7.21.0',
+        'Linux'
+        )
+    end
+  end
+
 end
