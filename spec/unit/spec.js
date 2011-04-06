@@ -174,6 +174,12 @@ describe '.parse()'
         '4.0.4',
         'iPad'
         )
+      parse(
+        'Mozilla/5.0 (iPhone; U; CPU OS 3_1_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0 Mobile/7B367 Safari/531.21.10',
+        'safari',
+        '4.0',
+        'iPhone'
+        )
     end
   end
 end
