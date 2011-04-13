@@ -175,10 +175,22 @@ describe '.parse()'
         'iPad'
         )
       parse(
+        'Mozilla/5.0 (iPad; U; CPU OS 4_3_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/8G4',
+        '',
+        '',
+        'iPad'
+        )
+      parse(
         'Mozilla/5.0 (iPhone; U; CPU OS 3_1_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0 Mobile/7B367 Safari/531.21.10',
         'safari',
         '4.0',
         'iPhone'
+        )
+      parse(
+        'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+        '',
+        '',
+        'Googlebot'
         )
     end
   end
